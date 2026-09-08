@@ -14,10 +14,10 @@ interface HeroSlide {
 
 const HERO_SLIDES: HeroSlide[] = [
   {
-    title: "Selamat Datang di Website Resmi Desa Bogem",
+    title: "Selamat Datang di Website Resmi Desa Balerejo",
     subtitle: "Kecamatan Kawedanan, Kabupaten Magetan",
     description: "Pusat informasi publik terpadu, transparansi tata kelola pemerintahan desa, layanan administrasi surat online, dan etalase promosi karya UMKM warga.",
-    badge: "Pemerintah Desa Bogem",
+    badge: "Pemerintah Desa Balerejo",
     icon: Landmark,
   },
   {

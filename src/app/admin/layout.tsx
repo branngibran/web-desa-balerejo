@@ -96,7 +96,7 @@ export default function AdminLayout({
                 Login Pengelola Desa
               </h1>
               <p className="text-xs text-slate-500">
-                Pemerintah Desa Bogem, Kec. Kawedanan, Kab. Magetan
+                Pemerintah Desa Balerejo, Kec. Kawedanan, Kab. Magetan
               </p>
             </div>
 
@@ -126,7 +126,7 @@ export default function AdminLayout({
                   required
                   value={emailInput}
                   onChange={(e) => setEmailInput(e.target.value)}
-                  placeholder="admin@desabogem.id"
+                  placeholder="admin@desabalerejo.id"
                   className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 text-xs sm:text-sm text-slate-900 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-600/30 focus:border-emerald-600 transition"
                 />
               </div>
@@ -188,7 +188,7 @@ export default function AdminLayout({
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="hidden sm:inline">Panel Pengelola Desa Bogem</span>
+              <span className="hidden sm:inline">Panel Pengelola Desa Balerejo</span>
               <span className="sm:hidden">Panel Admin</span>
             </Link>
           </div>

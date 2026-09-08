@@ -24,7 +24,7 @@ export const defaultOrganisasiList: ItemOrganisasi[] = [
   },
   {
     id: "pkk",
-    nama: "Tim Penggerak PKK Desa Bogem",
+    nama: "Tim Penggerak PKK Desa Balerejo",
     singkatan: "PKK",
     ketua: "Ibu Sri Wahyuni",
     jumlah_anggota: "35 Kader",

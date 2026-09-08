@@ -461,11 +461,11 @@ export default function AdminKelolaSuratPage() {
                   );
 
                   const waMessage = encodeURIComponent(
-                    `Halo Bpk/Ibu ${item.nama_lengkap},\n\nPermohonan surat *${item.jenis_surat}* Anda di Desa Bogem telah *${
+                    `Halo Bpk/Ibu ${item.nama_lengkap},\n\nPermohonan surat *${item.jenis_surat}* Anda di Desa Balerejo telah *${
                       isSelesai ? "SELESAI" : "DITERIMA & SEDANG DIPROSES"
                     }*.\n\nKode Tiket: ${item.id}\n${
                       isSelesai
-                        ? "File surat resmi sudah dapat Anda unduh langsung melalui portal web desa di https://desabogem.id/layanan-surat."
+                        ? "File surat resmi sudah dapat Anda unduh langsung melalui portal web desa di https://desabalerejo.id/layanan-surat."
                         : ""
                     }\n\nTerima kasih.`
                   );

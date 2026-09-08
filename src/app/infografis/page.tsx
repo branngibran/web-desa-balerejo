@@ -71,10 +71,10 @@ export default function InfografisPage() {
             </div>
 
             <h1 className="text-xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight break-words">
-              Infografis Desa Bogem
+              Infografis Desa Balerejo
             </h1>
             <p className="text-emerald-100/85 text-xs sm:text-sm lg:text-base leading-relaxed break-words">
-              Sajian statistik transparan mengenai demografi kependudukan, kelembagaan & organisasi desa, dan struktur keuangan APBDes Pemerintah Desa Bogem.
+              Sajian statistik transparan mengenai demografi kependudukan, kelembagaan & organisasi desa, dan struktur keuangan APBDes Pemerintah Desa Balerejo.
             </p>
 
             <div className="flex flex-wrap gap-3 pt-1">
@@ -241,7 +241,7 @@ export default function InfografisPage() {
                   <span>Lembaga Kemasyarakatan Desa (LKD)</span>
                 </div>
                 <h2 className="text-lg sm:text-2xl font-extrabold text-slate-900 tracking-tight break-words">
-                  Organisasi & Kelembagaan Desa Bogem
+                  Organisasi & Kelembagaan Desa Balerejo
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed break-words">
                   Wadah partisipasi aktif masyarakat desa dalam permusyawaratan, perencanaan pembangunan, pemberdayaan wanita, kepemudaan, ketertiban umum, dan pelayanan sosial.
@@ -597,7 +597,7 @@ export default function InfografisPage() {
                   </div>
                   <h4 className="text-base sm:text-xl font-bold">Laporan Realisasi APBDes Tahun {apbdes.tahun_anggaran}</h4>
                   <p className="text-xs text-emerald-200/80 leading-relaxed">
-                    Seluruh penerimaan, belanja, dan pembiayaan keuangan desa dikelola secara akuntabel, transparan, dan dapat dipertanggungjawabkan kepada seluruh warga Desa Bogem.
+                    Seluruh penerimaan, belanja, dan pembiayaan keuangan desa dikelola secara akuntabel, transparan, dan dapat dipertanggungjawabkan kepada seluruh warga Desa Balerejo.
                   </p>
                 </div>
               </div>

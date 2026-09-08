@@ -37,7 +37,7 @@ export default function KelolaBeritaAdmin() {
   // Form states
   const [judul, setJudul] = useState("");
   const [kategori, setKategori] = useState(KATEGORI_BERITA_PRESETS[0]);
-  const [penulis, setPenulis] = useState("Pemerintah Desa Bogem");
+  const [penulis, setPenulis] = useState("Pemerintah Desa Balerejo");
   const [ringkasan, setRingkasan] = useState("");
   const [konten, setKonten] = useState("");
   const [gambar, setGambar] = useState("");
@@ -127,7 +127,7 @@ export default function KelolaBeritaAdmin() {
     setEditingId(null);
     setJudul("");
     setKategori(KATEGORI_BERITA_PRESETS[0]);
-    setPenulis("Pemerintah Desa Bogem");
+    setPenulis("Pemerintah Desa Balerejo");
     setRingkasan("");
     setKonten("");
     setGambar("");
@@ -139,7 +139,7 @@ export default function KelolaBeritaAdmin() {
     setEditingId(item.id);
     setJudul(item.judul);
     setKategori(item.kategori || KATEGORI_BERITA_PRESETS[0]);
-    setPenulis(item.penulis || "Pemerintah Desa Bogem");
+    setPenulis(item.penulis || "Pemerintah Desa Balerejo");
     setRingkasan(item.ringkasan || "");
     setKonten(item.konten);
     setGambar(item.gambar || "");
@@ -238,7 +238,7 @@ export default function KelolaBeritaAdmin() {
               {editingId ? "Edit Warta / Berita Desa" : "Kelola & Terbitkan Berita Baru"}
             </h1>
             <p className="text-emerald-100/85 text-xs sm:text-sm mt-1 max-w-xl">
-              Publikasikan pengumuman resmi, agenda kegiatan kemasyarakatan, dan warta terkini warga Desa Bogem.
+              Publikasikan pengumuman resmi, agenda kegiatan kemasyarakatan, dan warta terkini warga Desa Balerejo.
             </p>
           </div>
         </div>
@@ -328,7 +328,7 @@ export default function KelolaBeritaAdmin() {
                   type="text"
                   value={penulis}
                   onChange={(e) => setPenulis(e.target.value)}
-                  placeholder="Contoh: Pemerintah Desa Bogem"
+                  placeholder="Contoh: Pemerintah Desa Balerejo"
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-xs sm:text-sm text-slate-800 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-600 transition"
                 />
               </div>

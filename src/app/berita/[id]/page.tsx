@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!berita) {
     return {
-      title: "Warta Tidak Ditemukan | Desa Bogem",
+      title: "Warta Tidak Ditemukan | Desa Balerejo",
       description: "Artikel warta atau pengumuman desa tidak ditemukan.",
     };
   }
@@ -37,14 +37,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const cleanDescription = berita.ringkasan || berita.konten.slice(0, 160).replace(/\n/g, " ");
 
   return {
-    title: `${berita.judul} | Desa Bogem`,
+    title: `${berita.judul} | Desa Balerejo`,
     description: cleanDescription,
     openGraph: {
       title: berita.judul,
       description: cleanDescription,
       type: "article",
       publishedTime: berita.created_at,
-      authors: [berita.penulis || "Pemerintah Desa Bogem"],
+      authors: [berita.penulis || "Pemerintah Desa Balerejo"],
       images: berita.gambar ? [{ url: berita.gambar, alt: berita.judul }] : [],
     },
   };
@@ -150,7 +150,7 @@ export default async function DetailBeritaPage({ params }: PageProps) {
               </div>
               <div className="min-w-0 flex-1">
                 <div className="font-bold text-slate-800 truncate">
-                  {berita.penulis || "Pemerintah Desa Bogem"}
+                  {berita.penulis || "Pemerintah Desa Balerejo"}
                 </div>
                 <div className="text-[11px] text-slate-400 flex items-center space-x-1">
                   <Calendar className="w-3 h-3 flex-shrink-0" />

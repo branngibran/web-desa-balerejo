@@ -405,7 +405,7 @@ export default function LayananSuratPage() {
                           Permohonan Surat Berhasil Dikirim!
                         </h3>
                         <p className="text-xs sm:text-sm text-emerald-800 leading-relaxed">
-                          Permohonan Anda telah diterima petugas Desa Bogem untuk diverifikasi dan diproses.
+                          Permohonan Anda telah diterima petugas Desa Balerejo untuk diverifikasi dan diproses.
                         </p>
                       </div>
                     </div>
@@ -904,7 +904,7 @@ function SuratCard({ item }: { item: PermohonanSurat }) {
           {item.file_surat_selesai ? (
             <a
               href={item.file_surat_selesai}
-              download={item.nama_file_selesai || "Surat_Desa_Bogem.pdf"}
+              download={item.nama_file_selesai || "Surat_Desa_Balerejo.pdf"}
               className="bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs px-5 py-2.5 rounded-xl transition flex items-center space-x-2 shadow active:scale-95"
             >
               <Download className="w-4 h-4" />
@@ -912,7 +912,7 @@ function SuratCard({ item }: { item: PermohonanSurat }) {
             </a>
           ) : (
             <span className="text-xs text-slate-500 italic">
-              Silakan ambil cetakan fisik surat di Balai Desa Bogem.
+              Silakan ambil cetakan fisik surat di Balai Desa Balerejo.
             </span>
           )}
         </div>

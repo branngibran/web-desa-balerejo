@@ -39,7 +39,7 @@ export default function AparaturPreview({ listPerangkat = [] }: AparaturPreviewP
             Aparatur & Perangkat Desa
           </h2>
           <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-2xl">
-            Struktur Organisasi dan Tata Kerja (SOTK) Pemerintah Desa Bogem yang siap melayani kebutuhan masyarakat.
+            Struktur Organisasi dan Tata Kerja (SOTK) Pemerintah Desa Balerejo yang siap melayani kebutuhan masyarakat.
           </p>
         </div>
         <Link

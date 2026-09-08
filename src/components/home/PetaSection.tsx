@@ -30,7 +30,7 @@ export default function PetaSection() {
               <span>Lokasi & Pelayanan</span>
             </div>
             <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
-              Peta Wilayah & Kantor Desa Bogem
+              Peta Wilayah & Kantor Desa Balerejo
             </h2>
             <p className="text-xs text-slate-500 mt-0.5">
               Kecamatan Kawedanan, Kabupaten Magetan, Jawa Timur
@@ -55,7 +55,7 @@ export default function PetaSection() {
               </div>
               <h3 className="text-sm font-bold text-slate-900">Alamat Kantor Desa</h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                {profil.alamat_kantor || "Jl. Bakti Mulya No. 241, Desa Bogem, Kec. Kawedanan, Kabupaten Magetan, Jawa Timur 63382"}
+                {profil.alamat_kantor || "Jl. Raya Balerejo, Desa Balerejo, Kec. Kawedanan, Kabupaten Magetan, Jawa Timur 63382"}
               </p>
             </div>
 
@@ -67,8 +67,8 @@ export default function PetaSection() {
               <div className="text-xs text-slate-600 leading-relaxed space-y-1.5">
                 <p>
                   Email:{" "}
-                  <a href={`mailto:${profil.email_kantor || "info@desabogem.id"}`} className="font-semibold text-emerald-800 hover:underline">
-                    {profil.email_kantor || "info@desabogem.id"}
+                  <a href={`mailto:${profil.email_kantor || "info@desabalerejo.id"}`} className="font-semibold text-emerald-800 hover:underline">
+                    {profil.email_kantor || "info@desabalerejo.id"}
                   </a>
                 </p>
                 <p>

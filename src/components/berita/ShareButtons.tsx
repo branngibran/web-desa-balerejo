@@ -22,7 +22,7 @@ export default function ShareButtons({ title }: ShareButtonsProps) {
   const handleShareWA = () => {
     if (typeof window !== "undefined") {
       const text = encodeURIComponent(
-        `*${title}*\n\nBaca selengkapnya di Website Resmi Desa Bogem:\n${window.location.href}`
+        `*${title}*\n\nBaca selengkapnya di Website Resmi Desa Balerejo:\n${window.location.href}`
       );
       window.open(`https://api.whatsapp.com/send?text=${text}`, "_blank");
     }
@@ -47,7 +47,7 @@ export default function ShareButtons({ title }: ShareButtonsProps) {
         try {
           await navigator.share({
             title: title,
-            text: `${title} - Website Resmi Desa Bogem`,
+            text: `${title} - Website Resmi Desa Balerejo`,
             url: url,
           });
           return;

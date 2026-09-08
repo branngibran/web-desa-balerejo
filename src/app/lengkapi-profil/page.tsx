@@ -215,7 +215,7 @@ function LengkapiProfilForm() {
           </div>
           <h1 className="text-2xl font-bold text-slate-900">Lengkapi Data Profil</h1>
           <p className="text-xs text-slate-500 max-w-sm mx-auto">
-            Email Anda telah terverifikasi. Masukkan NIK KTP Anda untuk mengaktifkan akses Layanan Surat Mandiri Desa Bogem secara resmi.
+            Email Anda telah terverifikasi. Masukkan NIK KTP Anda untuk mengaktifkan akses Layanan Surat Mandiri Desa Balerejo secara resmi.
           </p>
         </div>
 

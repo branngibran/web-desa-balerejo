@@ -66,10 +66,10 @@ export default function ProfilPage() {
             </div>
 
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
-              Profil Desa Bogem
+              Profil Desa Balerejo
             </h1>
             <p className="text-emerald-100/85 text-xs sm:text-sm lg:text-base leading-relaxed">
-              Informasi lengkap mengenai visi dan misi pembangunan, bagan struktur organisasi tata kelola desa, asal-usul sejarah, serta peta kondisi geografis Desa Bogem, Kec. Kawedanan, Kab. Magetan.
+              Informasi lengkap mengenai visi dan misi pembangunan, bagan struktur organisasi tata kelola desa, asal-usul sejarah, serta peta kondisi geografis Desa Balerejo, Kec. Kawedanan, Kab. Magetan.
             </p>
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function ProfilPage() {
                 </div>
                 <div>
                   <h2 className="text-lg sm:text-xl font-bold text-slate-900">Visi & Misi Pembangunan</h2>
-                  <p className="text-xs text-slate-500">Arah dan landasan strategis penyelenggaraan pemerintahan Desa Bogem</p>
+                  <p className="text-xs text-slate-500">Arah dan landasan strategis penyelenggaraan pemerintahan Desa Balerejo</p>
                 </div>
               </div>
 
@@ -193,46 +193,34 @@ export default function ProfilPage() {
                   {profilData.bagan_desa_image ? (
                     <div className="space-y-2">
                       <div
-                        onClick={() => setZoomImage({ src: profilData.bagan_desa_image!, title: "Struktur Organisasi Pemerintahan Desa Bogem" })}
-                        className="relative rounded-2xl overflow-hidden border border-slate-300 bg-white shadow-sm cursor-pointer group max-h-80 flex items-center justify-center p-2"
+                        onClick={() => setZoomImage({ src: profilData.bagan_desa_image!, title: "Struktur Organisasi Pemerintahan Desa Balerejo" })}
+                        className="group relative block w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 cursor-zoom-in"
                       >
-                        <img
-                          src={profilData.bagan_desa_image}
-                          alt="Bagan Struktur Organisasi Desa Bogem"
-                          className="w-full h-auto max-h-72 object-contain rounded-xl group-hover:scale-105 transition-transform duration-300"
+                        <ImageWithSkeleton
+                          src={profilData.bagan_desa_image!}
+                          alt="Bagan Struktur Organisasi Desa Balerejo"
+                          className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300"
                         />
-                        <div className="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center space-x-2 text-white font-bold text-xs rounded-2xl">
-                          <ZoomIn className="w-5 h-5" />
-                          <span>Klik untuk Memperbesar</span>
+                        <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center space-x-2 text-white text-xs font-semibold backdrop-blur-[2px]">
+                          <ZoomIn className="w-4 h-4" />
+                          <span>Klik Perbesar</span>
                         </div>
                       </div>
-                      <p className="text-[10px] text-slate-400 text-center">Klik gambar bagan di atas untuk melihat resolusi penuh</p>
+                      <div className="mt-3 text-center">
+                        <span className="text-xs font-bold text-slate-800">Bagan Struktur Desa Balerejo</span>
+                        <p className="text-[11px] text-slate-500 mt-0.5">Hierarki Kepala Desa, Sekretaris Desa, Kepala Urusan & Seksi</p>
+                      </div>
                     </div>
                   ) : (
-                    /* Default Bagan Hierarchy Card if no custom image uploaded */
-                    <div className="space-y-2 bg-white p-4 rounded-2xl border border-slate-200/80">
-                      <ul className="space-y-1.5 text-xs text-slate-700">
-                        <li className="flex items-center space-x-2 bg-emerald-50 p-2.5 rounded-xl font-bold text-[#063321] border border-emerald-200/80">
-                          <Landmark className="w-4 h-4 text-emerald-700" />
-                          <span>Kepala Desa Bogem (Pimpinan Eksekutif)</span>
-                        </li>
-                        <li className="flex items-center space-x-2 bg-slate-50 p-2.5 rounded-xl font-semibold text-slate-800">
-                          <span className="w-2 h-2 rounded-full bg-emerald-600" />
-                          <span>Sekretaris Desa (Sekretariat Pemerintahan)</span>
-                        </li>
-                        <li className="flex items-center space-x-2 bg-slate-50 p-2.5 rounded-xl font-medium text-slate-700">
-                          <span className="w-2 h-2 rounded-full bg-emerald-500" />
-                          <span>Kasi Pemerintahan, Kasi Kesejahteraan, Kasi Pelayanan</span>
-                        </li>
-                        <li className="flex items-center space-x-2 bg-slate-50 p-2.5 rounded-xl font-medium text-slate-700">
-                          <span className="w-2 h-2 rounded-full bg-emerald-500" />
-                          <span>Kaur Tata Usaha & Umum, Keuangan, Perencanaan</span>
-                        </li>
-                        <li className="flex items-center space-x-2 bg-slate-50 p-2.5 rounded-xl font-medium text-slate-700">
-                          <span className="w-2 h-2 rounded-full bg-slate-400" />
-                          <span>Kepala Dusun (Pelaksana Kewilayahan 4 Dusun)</span>
-                        </li>
-                      </ul>
+                    <div className="p-8 text-center bg-slate-50 rounded-2xl border border-dashed border-slate-200 space-y-2">
+                      <p className="text-xs font-semibold text-slate-600">Bagan Struktur Desa Belum Diunggah</p>
+                      <p className="text-[11px] text-slate-500 max-w-xs mx-auto">
+                        Aparatur desa dapat mengunggah file gambar bagan SOTK resmi melalui Dashboard Admin.
+                      </p>
+                      <div className="inline-flex items-center space-x-2 text-[11px] font-medium text-emerald-800 bg-emerald-100/60 px-3 py-1 rounded-full mt-2">
+                        <CheckCircle2 className="w-3.5 h-3.5" />
+                        <span>Kepala Desa Balerejo (Pimpinan Eksekutif)</span>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -247,30 +235,32 @@ export default function ProfilPage() {
                       Struktur Organisasi Badan Permusyawaratan Desa
                     </h3>
                     <p className="text-xs text-slate-500">
-                      Susunan Ketua BPD, Wakil Ketua, Sekretaris, dan Anggota Bidang Permusyawaratan Desa Bogem.
+                      Susunan Ketua BPD, Wakil Ketua, Sekretaris, dan Anggota Bidang Permusyawaratan Desa Balerejo.
                     </p>
                   </div>
 
-                  {profilData.bagan_bpd_image ? (
-                    <div className="space-y-2">
-                      <div
-                        onClick={() => setZoomImage({ src: profilData.bagan_bpd_image!, title: "Struktur Organisasi BPD Desa Bogem" })}
-                        className="relative rounded-2xl overflow-hidden border border-slate-300 bg-white shadow-sm cursor-pointer group max-h-80 flex items-center justify-center p-2"
+                  {profilData?.bagan_bpd_image ? (
+                    <div>
+                      <button
+                        onClick={() => setZoomImage({ src: profilData.bagan_bpd_image!, title: "Struktur Organisasi BPD Desa Balerejo" })}
+                        className="group relative block w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 cursor-zoom-in"
                       >
-                        <img
-                          src={profilData.bagan_bpd_image}
-                          alt="Bagan Struktur Organisasi BPD Desa Bogem"
-                          className="w-full h-auto max-h-72 object-contain rounded-xl group-hover:scale-105 transition-transform duration-300"
+                        <ImageWithSkeleton
+                          src={profilData.bagan_bpd_image!}
+                          alt="Bagan Struktur Organisasi BPD Desa Balerejo"
+                          className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300"
                         />
-                        <div className="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center space-x-2 text-white font-bold text-xs rounded-2xl">
-                          <ZoomIn className="w-5 h-5" />
-                          <span>Klik untuk Memperbesar</span>
+                        <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center space-x-2 text-white text-xs font-semibold backdrop-blur-[2px]">
+                          <ZoomIn className="w-4 h-4" />
+                          <span>Klik Perbesar</span>
                         </div>
+                      </button>
+                      <div className="mt-3 text-center">
+                        <span className="text-xs font-bold text-slate-800">Bagan Kelembagaan BPD Balerejo</span>
                       </div>
                       <p className="text-[10px] text-slate-400 text-center">Klik gambar bagan di atas untuk melihat resolusi penuh</p>
                     </div>
                   ) : (
-                    /* Default BPD Hierarchy Card if no custom image uploaded */
                     <div className="space-y-2 bg-white p-4 rounded-2xl border border-slate-200/80">
                       <ul className="space-y-1.5 text-xs text-slate-700">
                         <li className="flex items-center space-x-2 bg-emerald-50 p-2.5 rounded-xl font-bold text-emerald-950 border border-emerald-200/80">
@@ -312,12 +302,12 @@ export default function ProfilPage() {
                   <History className="w-5 h-5 text-emerald-700" />
                 </div>
                 <div>
-                  <h2 className="text-lg sm:text-xl font-bold text-slate-900">Sejarah Desa Bogem</h2>
+                  <h2 className="text-lg sm:text-xl font-bold text-slate-900">Sejarah Desa Balerejo</h2>
                   <p className="text-xs text-slate-500">Asal-usul, nilai kearifan lokal, dan perjalanan sejarah masyarakat desa</p>
                 </div>
               </div>
 
-              <div className="prose max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3 sm:space-y-4 whitespace-pre-line">
+              <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-600 leading-relaxed space-y-4 whitespace-pre-line bg-slate-50/60 p-5 sm:p-7 rounded-2xl border border-slate-200/80">
                 {profilData.sejarah || defaultSejarahDesa}
               </div>
             </div>
@@ -326,81 +316,94 @@ export default function ProfilPage() {
 
         {/* 5. SECTION: GEOGRAFIS & PETA LOKASI */}
         {(activeTab === "geografis" || activeTab === "semua") && (
-          <section id="geografis" className="space-y-6 animate-in fade-in duration-300">
-            <div className="bg-white rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm border border-slate-200/80 space-y-6 sm:space-y-8">
-              <div className="flex items-center space-x-3 text-emerald-900 border-b border-slate-100 pb-4">
-                <div className="w-10 h-10 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center font-bold flex-shrink-0 border border-emerald-100">
-                  <Compass className="w-5 h-5 text-emerald-700" />
+          <section id="geografis" className="scroll-mt-36 animate-in fade-in duration-300">
+            <div className="bg-white rounded-3xl p-5 sm:p-8 shadow-sm border border-slate-200/80 space-y-6">
+              
+              <div className="flex items-center space-x-3 pb-4 border-b border-slate-100">
+                <div className="w-10 h-10 rounded-2xl bg-emerald-100/70 text-[#004329] flex items-center justify-center shadow-sm">
+                  <Compass className="w-5 h-5" />
                 </div>
                 <div>
-                  <h2 className="text-lg sm:text-xl font-bold text-slate-900">Peta Lokasi & Geografis Desa</h2>
-                  <p className="text-xs text-slate-500">Kondisi fisik, luas wilayah, dan tapal batas administratif Desa Bogem, Kec. Kawedanan, Kab. Magetan</p>
+                  <h2 className="text-lg sm:text-xl font-bold text-slate-900">Kondisi Geografis & Batas Administratif</h2>
+                  <p className="text-xs text-slate-500">Kondisi fisik, luas wilayah, dan tapal batas administratif Desa Balerejo, Kec. Kawedanan, Kab. Magetan</p>
                 </div>
               </div>
 
-              {/* Grid Info Geografis & Tabel Batas Wilayah */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
                 <div className="lg:col-span-7">
                   <VillageMap />
                 </div>
 
-                <div className="lg:col-span-5 space-y-4">
-                  <div className="bg-slate-50/80 p-5 sm:p-6 rounded-2xl border border-slate-200/80 space-y-3 sm:space-y-4">
-                    <h3 className="text-xs font-bold text-[#063321] uppercase tracking-wider flex items-center space-x-1.5">
-                      <MapPin className="w-4 h-4 text-emerald-700" />
-                      <span>Batas-Batas Wilayah Desa Bogem</span>
-                    </h3>
+                <div className="lg:col-span-5 space-y-6">
+                  {/* Geographic stats summary pills */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
+                      <span className="text-[10px] sm:text-xs font-medium text-slate-500 uppercase tracking-wide block">Luas Wilayah</span>
+                      <span className="text-base sm:text-lg font-extrabold text-slate-900">{profilData.luas_wilayah || "245 Ha"}</span>
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
+                      <span className="text-[10px] sm:text-xs font-medium text-slate-500 uppercase tracking-wide block">Jumlah Penduduk</span>
+                      <span className="text-base sm:text-lg font-extrabold text-[#004329]">{profilData.jumlah_penduduk || "3.620 Jiwa"}</span>
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
+                      <span className="text-[10px] sm:text-xs font-medium text-slate-500 uppercase tracking-wide block">Ketinggian Tempat</span>
+                      <span className="text-base sm:text-lg font-extrabold text-slate-900">{profilData.ketinggian || "± 78 mdpl"}</span>
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
+                      <span className="text-[10px] sm:text-xs font-medium text-slate-500 uppercase tracking-wide block">Topografi</span>
+                      <span className="text-base sm:text-lg font-extrabold text-slate-900">Dataran Rendah</span>
+                    </div>
+                  </div>
 
-                    <div className="divide-y divide-slate-200/80 text-xs">
-                      <div className="py-2.5 flex justify-between">
-                        <span className="font-bold text-slate-800">Sebelah Utara</span>
-                        <span className="text-slate-600">{batas.utara}</span>
+                  {/* Boundary Directions Cards */}
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-2 text-xs font-bold text-slate-700">
+                      <MapPin className="w-4 h-4 text-emerald-600" />
+                      <span>Batas-Batas Wilayah Desa Balerejo</span>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <div className="p-4 rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 flex items-start space-x-3">
+                        <div className="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center font-bold text-xs flex-shrink-0">U</div>
+                        <div>
+                          <span className="text-[11px] font-semibold text-slate-400 block">Batas Utara</span>
+                          <span className="text-xs sm:text-sm font-bold text-slate-800">{batas.utara}</span>
+                        </div>
                       </div>
-                      <div className="py-2.5 flex justify-between">
-                        <span className="font-bold text-slate-800">Sebelah Timur</span>
-                        <span className="text-slate-600">{batas.timur}</span>
+
+                      <div className="p-4 rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 flex items-start space-x-3">
+                        <div className="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center font-bold text-xs flex-shrink-0">T</div>
+                        <div>
+                          <span className="text-[11px] font-semibold text-slate-400 block">Batas Timur</span>
+                          <span className="text-xs sm:text-sm font-bold text-slate-800">{batas.timur}</span>
+                        </div>
                       </div>
-                      <div className="py-2.5 flex justify-between">
-                        <span className="font-bold text-slate-800">Sebelah Selatan</span>
-                        <span className="text-slate-600">{batas.selatan}</span>
+
+                      <div className="p-4 rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 flex items-start space-x-3">
+                        <div className="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center font-bold text-xs flex-shrink-0">S</div>
+                        <div>
+                          <span className="text-[11px] font-semibold text-slate-400 block">Batas Selatan</span>
+                          <span className="text-xs sm:text-sm font-bold text-slate-800">{batas.selatan}</span>
+                        </div>
                       </div>
-                      <div className="py-2.5 flex justify-between">
-                        <span className="font-bold text-slate-800">Sebelah Barat</span>
-                        <span className="text-slate-600">{batas.barat}</span>
+
+                      <div className="p-4 rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 flex items-start space-x-3">
+                        <div className="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center font-bold text-xs flex-shrink-0">B</div>
+                        <div>
+                          <span className="text-[11px] font-semibold text-slate-400 block">Batas Barat</span>
+                          <span className="text-xs sm:text-sm font-bold text-slate-800">{batas.barat}</span>
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="bg-emerald-50/60 p-5 sm:p-6 rounded-2xl border border-emerald-100 space-y-2">
-                    <div className="flex items-center space-x-1.5 text-xs font-bold text-emerald-800 uppercase tracking-wider">
-                      <Layers className="w-4 h-4 text-emerald-700" />
-                      <span>Tipologi & Penggunaan Lahan</span>
-                    </div>
-                    <p className="text-xs text-slate-700 leading-relaxed">
-                      Desa Bogem didominasi oleh lahan persawahan subur, perkebunan palawija, dan pemukiman warga yang asri di kawasan lereng timur Kabupaten Magetan.
+                  {/* Geographic notes banner */}
+                  <div className="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200/80 flex items-start space-x-3">
+                    <Info className="w-4 h-4 text-emerald-800 flex-shrink-0 mt-0.5" />
+                    <p className="text-xs text-emerald-950 leading-relaxed">
+                      Desa Balerejo didominasi oleh lahan persawahan subur, perkebunan palawija, dan pemukiman warga yang asri di kawasan lereng timur Kabupaten Magetan.
                     </p>
                   </div>
-                </div>
-              </div>
-
-              {/* 3 Metric Cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-2">
-                <div className="bg-slate-50/80 p-4 sm:p-5 rounded-2xl border border-slate-200/80 text-center space-y-1">
-                  <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Luas Wilayah</span>
-                  <div className="text-lg sm:text-xl font-bold text-slate-900">{profilData.luas_wilayah || "245 Ha"}</div>
-                  <span className="text-[11px] text-emerald-800 font-medium">Hektar Daratan & Sawah</span>
-                </div>
-
-                <div className="bg-slate-50/80 p-4 sm:p-5 rounded-2xl border border-slate-200/80 text-center space-y-1">
-                  <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Jumlah Penduduk</span>
-                  <div className="text-lg sm:text-xl font-bold text-slate-900">{profilData.jumlah_penduduk || "3.620 Jiwa"}</div>
-                  <span className="text-[11px] text-emerald-800 font-medium">Jiwa Terdaftar</span>
-                </div>
-
-                <div className="bg-slate-50/80 p-4 sm:p-5 rounded-2xl border border-slate-200/80 text-center space-y-1">
-                  <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Ketinggian Tempat</span>
-                  <div className="text-lg sm:text-xl font-bold text-slate-900">{profilData.ketinggian || "± 78 mdpl"}</div>
-                  <span className="text-[11px] text-emerald-800 font-medium">Dataran Rendah Subur</span>
                 </div>
               </div>
             </div>
@@ -421,7 +424,7 @@ export default function ProfilPage() {
               <div className="flex items-center space-x-2">
                 <a
                   href={zoomImage.src}
-                  download="Bagan_Desa_Bogem.png"
+                  download="Bagan_Desa_Balerejo.png"
                   className="bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs px-3 py-1.5 rounded-xl transition flex items-center space-x-1"
                 >
                   <Download className="w-3.5 h-3.5" />

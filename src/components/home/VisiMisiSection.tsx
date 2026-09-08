@@ -8,7 +8,7 @@ interface VisiMisiSectionProps {
 }
 
 export default function VisiMisiSection({ profilData }: VisiMisiSectionProps) {
-  const visi = (profilData.visi || defaultProfilDesa.visi || "").replace(/Balerejo/gi, "Bogem");
+  const visi = (profilData.visi || defaultProfilDesa.visi || "").replace(/Bogem/gi, "Balerejo");
   const misiList = profilData.misi && profilData.misi.length > 0 ? profilData.misi : defaultProfilDesa.misi;
 
   return (
@@ -22,7 +22,7 @@ export default function VisiMisiSection({ profilData }: VisiMisiSectionProps) {
             <h2 className="text-lg sm:text-xl font-bold text-slate-900">
               Visi & Misi Pembangunan
             </h2>
-            <p className="text-xs text-slate-500">Arah kebijakan dan cita-cita kemajuan Desa Bogem</p>
+            <p className="text-xs text-slate-500">Arah kebijakan dan cita-cita kemajuan Desa Balerejo</p>
           </div>
         </div>
 
@@ -51,7 +51,7 @@ export default function VisiMisiSection({ profilData }: VisiMisiSectionProps) {
                   {idx + 1}
                 </div>
                 <span className="text-xs text-slate-700 font-normal leading-relaxed">
-                  {item.replace(/Balerejo/gi, "Bogem")}
+                  {item.replace(/Bogem/gi, "Balerejo")}
                 </span>
               </div>
             ))}

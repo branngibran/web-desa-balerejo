@@ -52,7 +52,7 @@ export default function PotensiDesa() {
               Beli Dari Desa
             </h1>
             <p className="text-emerald-100/85 text-xs sm:text-sm lg:text-base leading-relaxed">
-              Layanan promosi produk UMKM & hasil karya masyarakat desa Bogem untuk mendorong kemandirian dan pertumbuhan ekonomi warga secara berkelanjutan.
+              Layanan promosi produk UMKM & hasil karya masyarakat desa Balerejo untuk mendorong kemandirian dan pertumbuhan ekonomi warga secara berkelanjutan.
             </p>
 
             {/* Quick Stats Pill */}

@@ -28,7 +28,7 @@ export const defaultOpsiSuratList: OpsiSurat[] = [
     custom_fields: [
       { id: "nama_usaha", label: "Nama Usaha / Toko", tipe: "text", placeholder: "Contoh: Warung Makan Berkah", wajib: true },
       { id: "jenis_usaha", label: "Bidang / Jenis Usaha", tipe: "text", placeholder: "Contoh: Kuliner / Perdagangan / Jasa", wajib: true },
-      { id: "alamat_usaha", label: "Alamat Tempat Usaha", tipe: "text", placeholder: "Contoh: Jl. Raya Bogem No. 12, RT 02/01", wajib: true },
+      { id: "alamat_usaha", label: "Alamat Tempat Usaha", tipe: "text", placeholder: "Contoh: Jl. Raya Balerejo No. 12, RT 02/01", wajib: true },
       { id: "tahun_berdiri", label: "Mulai Usaha Sejak Tahun", tipe: "text", placeholder: "Contoh: 2021", wajib: false },
       { id: "keperluan", label: "Keperluan Pengajuan SKU", tipe: "textarea", placeholder: "Contoh: Persyaratan Pengajuan KUR Bank BRI", wajib: true },
     ],
@@ -36,7 +36,7 @@ export const defaultOpsiSuratList: OpsiSurat[] = [
   {
     id: "opsi-2",
     nama_surat: "Surat Keterangan Domisili",
-    deskripsi: "Surat bukti keterangan tempat tinggal resmi pemohon di wilayah Desa Bogem.",
+    deskripsi: "Surat bukti keterangan tempat tinggal resmi pemohon di wilayah Desa Balerejo.",
     syarat: "Fotokopi KTP, KK, dan Alamat Tempat Tinggal Saat Ini.",
     custom_fields: [
       { id: "dusun", label: "Dusun / Lingkungan", tipe: "text", placeholder: "Contoh: Dusun Krajan", wajib: true },
@@ -89,7 +89,7 @@ export const defaultOpsiSuratList: OpsiSurat[] = [
       { id: "nama_almarhum", label: "Nama Lengkap Almarhum/Almarhumah", tipe: "text", placeholder: "Nama almarhum sesuai KTP/KK", wajib: true },
       { id: "nik_almarhum", label: "NIK Almarhum", tipe: "text", placeholder: "16 digit NIK almarhum", wajib: true },
       { id: "tanggal_meninggal", label: "Tanggal Meninggal Dunia", tipe: "date", wajib: true },
-      { id: "tempat_meninggal", label: "Tempat Meninggal", tipe: "text", placeholder: "Contoh: Rumah Duka Desa Bogem / RSUD Sayidiman", wajib: true },
+      { id: "tempat_meninggal", label: "Tempat Meninggal", tipe: "text", placeholder: "Contoh: Rumah Duka Desa Balerejo / RSUD Sayidiman", wajib: true },
       { id: "sebab_kematian", label: "Penyebab Meninggal Dunia", tipe: "text", placeholder: "Contoh: Sakit / Usia Lanjut", wajib: true },
       { id: "hubungan_pelapor", label: "Hubungan Pemohon dengan Jenazah", tipe: "text", placeholder: "Contoh: Anak Kandung / Suami / Istri", wajib: true },
     ],

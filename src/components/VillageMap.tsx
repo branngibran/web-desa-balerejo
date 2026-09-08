@@ -36,9 +36,9 @@ export default function VillageMap() {
   }, []);
 
   const defaultEmbed =
-    "https://maps.google.com/maps?q=Kantor+Desa+Bogem+Kawedanan+Magetan&t=&z=16&ie=UTF8&iwloc=&output=embed";
+    "https://maps.google.com/maps?q=Kantor+Desa+Balerejo+Kawedanan+Magetan&t=&z=16&ie=UTF8&iwloc=&output=embed";
   const defaultGoogleUrl =
-    "https://www.google.com/maps/search/?api=1&query=Kantor+Desa+Bogem+Kawedanan+Magetan";
+    "https://www.google.com/maps/search/?api=1&query=Kantor+Desa+Balerejo+Kawedanan+Magetan";
 
   return (
     <div className="bg-white rounded-3xl p-5 sm:p-8 shadow-sm border border-slate-200/80 space-y-6">
@@ -51,10 +51,10 @@ export default function VillageMap() {
             <span>Peta Presisi Wilayah</span>
           </div>
           <h2 className="text-lg sm:text-2xl font-extrabold text-slate-900">
-            Lokasi Kantor Desa Bogem
+            Lokasi Kantor Desa Balerejo
           </h2>
           <p className="text-xs text-slate-500">
-            {mapData?.address || "Jl. Bakti Mulya No. 241, Desa Bogem, Kec. Kawedanan, Kab. Magetan, Jawa Timur 63382"}
+            {mapData?.address || "Jl. Raya Balerejo, Desa Balerejo, Kec. Kawedanan, Kab. Magetan, Jawa Timur 63382"}
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export default function VillageMap() {
       >
         {isIframeLoaded ? (
           <iframe
-            title="Peta Lokasi Kantor Desa Bogem Kawedanan Magetan"
+            title="Peta Lokasi Kantor Desa Balerejo Kawedanan Magetan"
             src={mapData?.embedUrl || defaultEmbed}
             className="w-full h-full border-0 animate-in fade-in duration-500"
             loading="lazy"
@@ -105,7 +105,7 @@ export default function VillageMap() {
             <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
           </div>
           <div className="truncate">
-            <div className="font-bold text-slate-900 truncate">Kantor Desa Bogem</div>
+            <div className="font-bold text-slate-900 truncate">Kantor Desa Balerejo</div>
             <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium truncate">Kec. Kawedanan, Kab. Magetan</div>
           </div>
         </div>

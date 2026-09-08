@@ -39,13 +39,13 @@ export default function AdminDashboard() {
           <div className="space-y-3 sm:space-y-4 max-w-2xl">
             <div className="inline-flex items-center space-x-2 bg-emerald-800/80 border border-emerald-500/40 text-emerald-100 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-300" />
-              <span>Panel Pengelola Desa Bogem</span>
+              <span>Panel Pengelola Desa Balerejo</span>
             </div>
             <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
               Portal Kelola Data Desa
             </h1>
             <p className="text-emerald-100/85 text-xs sm:text-sm leading-relaxed">
-              Pusat pengelolaan mandiri data website Desa Bogem. Perubahan yang Anda simpan di sini akan langsung tampil pada website utama.
+              Pusat pengelolaan mandiri data website Desa Balerejo. Perubahan yang Anda simpan di sini akan langsung tampil pada website utama.
             </p>
           </div>
         </div>

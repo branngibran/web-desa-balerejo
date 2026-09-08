@@ -84,11 +84,11 @@ export default function PemerintahPage() {
             </div>
 
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
-              Pemerintah Desa Bogem
+              Pemerintah Desa Balerejo
             </h1>
 
             <p className="text-emerald-100/85 text-xs sm:text-sm lg:text-base leading-relaxed">
-              Daftar susunan aparatur dan perangkat Pemerintah Desa Bogem, Kecamatan Kawedanan, Kabupaten Magetan yang berdedikasi melayani seluruh kebutuhan masyarakat secara prima dan transparan.
+              Daftar susunan aparatur dan perangkat Pemerintah Desa Balerejo, Kecamatan Kawedanan, Kabupaten Magetan yang berdedikasi melayani seluruh kebutuhan masyarakat secara prima dan transparan.
             </p>
           </div>
         </div>
@@ -101,7 +101,7 @@ export default function PemerintahPage() {
             </div>
             <div>
               <h2 className="text-lg sm:text-xl font-bold text-slate-900">Hierarki Tata Kerja Pemerintahan</h2>
-              <p className="text-xs text-slate-500">Alur koordinasi dan penugasan aparatur Desa Bogem</p>
+              <p className="text-xs text-slate-500">Alur koordinasi dan penugasan aparatur Desa Balerejo</p>
             </div>
           </div>
 
@@ -231,7 +231,7 @@ export default function PemerintahPage() {
                     </h3>
 
                     <p className="text-[10px] text-slate-500 font-medium">
-                      Pemerintah Desa Bogem
+                      Pemerintah Desa Balerejo
                     </p>
                   </div>
                 </div>

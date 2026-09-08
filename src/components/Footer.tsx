@@ -41,12 +41,12 @@ export default function Footer() {
                 />
               </div>
               <div>
-                <h3 className="text-base sm:text-lg font-bold text-white tracking-tight">Desa Bogem</h3>
+                <h3 className="text-base sm:text-lg font-bold text-white tracking-tight">Desa Balerejo</h3>
                 <p className="text-xs text-emerald-300/90">Kec. Kawedanan, Kab. Magetan</p>
               </div>
             </div>
             <p className="text-xs sm:text-sm text-emerald-200/80 leading-relaxed">
-              Website Resmi Layanan Informasi Publik, Administrasi Persuratan & Promosi Produk UMKM Warga Desa Bogem.
+              Website Resmi Layanan Informasi Publik, Administrasi Persuratan & Promosi Produk UMKM Warga Desa Balerejo.
             </p>
           </div>
 
@@ -56,7 +56,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-xs sm:text-sm text-emerald-200/90">
               <li className="flex items-start space-x-2.5">
                 <MapPin className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
-                <span className="leading-relaxed">{profil.alamat_kantor || "Jl. Bakti Mulya No. 241, Desa Bogem, Kec. Kawedanan, Kab. Magetan"}</span>
+                <span className="leading-relaxed">{profil.alamat_kantor || "Jl. Raya Balerejo, Desa Balerejo, Kec. Kawedanan, Kab. Magetan"}</span>
               </li>
               <li className="flex items-center space-x-2.5">
                 <Phone className="w-4 h-4 text-emerald-400 flex-shrink-0" />
@@ -66,8 +66,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2.5">
                 <Mail className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                <a href={`mailto:${profil.email_kantor || "info@desabogem.id"}`} className="hover:text-white transition">
-                  {profil.email_kantor || "info@desabogem.id"}
+                <a href={`mailto:${profil.email_kantor || "info@desabalerejo.id"}`} className="hover:text-white transition">
+                  {profil.email_kantor || "info@desabalerejo.id"}
                 </a>
               </li>
             </ul>
@@ -121,7 +121,7 @@ export default function Footer() {
 
         {/* Bottom Copyright */}
         <div className="pt-6 border-t border-emerald-900/60 flex flex-col md:flex-row items-center justify-between text-xs text-emerald-400/80 gap-2">
-          <p>© {new Date().getFullYear()} Pemerintah Desa Bogem, Magetan. Hak Cipta Dilindungi.</p>
+          <p>© {new Date().getFullYear()} Pemerintah Desa Balerejo, Magetan. Hak Cipta Dilindungi.</p>
           <div className="flex items-center space-x-1">
             <span>Portal Resmi Layanan Masyarakat Desa</span>
           </div>

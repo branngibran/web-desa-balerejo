@@ -71,7 +71,7 @@ export async function createBerita(input: CreateBeritaInput): Promise<{ success:
     const payload = {
       judul: input.judul.trim(),
       konten: input.konten.trim(),
-      penulis: input.penulis?.trim() || "Pemerintah Desa Bogem",
+      penulis: input.penulis?.trim() || "Pemerintah Desa Balerejo",
       kategori: input.kategori || "Pengumuman Resmi",
       ringkasan: input.ringkasan?.trim() || null,
       gambar: input.gambar || null,

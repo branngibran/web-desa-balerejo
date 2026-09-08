@@ -84,9 +84,9 @@ function KelolaProfilDesaContent() {
   // Tab 4: Jam Layanan & Kontak Kantor
   const [jamPelayanan, setJamPelayanan] = useState("Senin - Jumat: 08.00 - 15.00 WIB");
   const [jamPelayananNote, setJamPelayananNote] = useState("*Sabtu & Minggu: Libur / Pelayanan Darurat");
-  const [alamatKantor, setAlamatKantor] = useState("Jl. Bakti Mulya No. 241, Desa Bogem, Kec. Kawedanan, Kab. Magetan");
+  const [alamatKantor, setAlamatKantor] = useState("Jl. Raya Balerejo, Desa Balerejo, Kec. Kawedanan, Kab. Magetan");
   const [teleponKantor, setTeleponKantor] = useState("+62 812-3456-7890");
-  const [emailKantor, setEmailKantor] = useState("info@desabogem.id");
+  const [emailKantor, setEmailKantor] = useState("info@desabalerejo.id");
 
   const [status, setStatus] = useState<"idle" | "loading" | "sukses" | "error">("idle");
   const [feedbackMessage, setFeedbackMessage] = useState("");
@@ -656,7 +656,7 @@ function KelolaProfilDesaContent() {
                     <h2 className="text-base sm:text-lg font-bold text-slate-900">Sejarah & Asal-usul Desa</h2>
                   </div>
                   <p className="text-xs text-slate-500">
-                    Tuliskan kisah sejarah pembentukan Desa Bogem, nilai kearifan lokal, dan tonggak sejarah penting desa.
+                    Tuliskan kisah sejarah pembentukan Desa Balerejo, nilai kearifan lokal, dan tonggak sejarah penting desa.
                   </p>
                   <textarea
                     rows={6}
@@ -870,7 +870,7 @@ function KelolaProfilDesaContent() {
                         value={alamatKantor}
                         onChange={(e) => setAlamatKantor(e.target.value)}
                         className="w-full border border-slate-200 px-4 py-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-600 text-xs text-slate-800 font-medium bg-white leading-relaxed"
-                        placeholder="Contoh: Jl. Bakti Mulya No. 241, Desa Bogem, Kec. Kawedanan, Kab. Magetan"
+                        placeholder="Contoh: Jl. Raya Balerejo, Desa Balerejo, Kec. Kawedanan, Kab. Magetan"
                       />
                     </div>
 
@@ -901,7 +901,7 @@ function KelolaProfilDesaContent() {
                           value={emailKantor}
                           onChange={(e) => setEmailKantor(e.target.value)}
                           className="w-full border border-slate-200 px-4 py-2.5 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-600 text-xs text-slate-800 font-medium bg-white"
-                          placeholder="Contoh: info@desabogem.id"
+                          placeholder="Contoh: info@desabalerejo.id"
                         />
                       </div>
                     </div>

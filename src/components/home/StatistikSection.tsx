@@ -49,7 +49,7 @@ export default function StatistikSection() {
               <span>Statistik Wilayah</span>
             </div>
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-white">
-              Desa Bogem dalam Angka
+              Desa Balerejo dalam Angka
             </h2>
             <p className="text-xs text-emerald-200/80 mt-0.5">Ringkasan data kependudukan dan status kemandirian desa terkini</p>
           </div>

@@ -21,14 +21,13 @@ export default function SambutanKades({ profilData, listPerangkat }: SambutanKad
 
   const displayKadesNama =
     profilData.nama_kades &&
-    !profilData.nama_kades.toLowerCase().includes("balerejo") &&
-    profilData.nama_kades !== "H. Suratno, S.Sos." &&
-    profilData.nama_kades !== "Kepala Desa Bogem"
+    profilData.nama_kades !== "Kepala Desa Bogem" &&
+    profilData.nama_kades !== "Kepala Desa Balerejo"
       ? profilData.nama_kades
-      : (kadesFromSOTK?.nama || "Kepala Desa Bogem");
+      : (kadesFromSOTK?.nama || "Kepala Desa Balerejo");
 
   const displaySambutan = (profilData.sambutan_kades || defaultProfilDesa.sambutan_kades || "")
-    .replace(/Balerejo/gi, "Bogem")
+    .replace(/Bogem/gi, "Balerejo")
     .replace(/Kebonsari/gi, "Kawedanan")
     .replace(/Madiun/gi, "Magetan");
 
@@ -58,7 +57,7 @@ export default function SambutanKades({ profilData, listPerangkat }: SambutanKad
                 {displayKadesNama}
               </h4>
               <span className="text-[10px] text-emerald-300 font-medium block mt-0.5">
-                Pemerintah Desa Bogem
+                Pemerintah Desa Balerejo
               </span>
             </div>
           </div>
@@ -71,7 +70,7 @@ export default function SambutanKades({ profilData, listPerangkat }: SambutanKad
             </div>
 
             <h2 className="text-lg sm:text-2xl font-bold tracking-tight text-slate-900 leading-snug">
-              Selamat Datang di Website Resmi Desa Bogem
+              Selamat Datang di Website Resmi Desa Balerejo
             </h2>
 
             <blockquote className="text-xs sm:text-sm text-slate-600 italic leading-relaxed pt-1 border-l-2 border-emerald-500 pl-3 md:pl-4 text-left">

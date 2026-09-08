@@ -8,25 +8,25 @@ export const defaultBatasWilayah: BatasWilayah = {
   barat: "Desa Sugihrejo",
 };
 
-export const defaultSejarahDesa = `Nama Desa Bogem memiliki akar sejarah yang kuat dan sarat nilai perjuangan serta kearifan lokal di wilayah Kecamatan Kawedanan, Kabupaten Magetan. Sejak dahulu kala, kawasan ini dikenal sebagai wilayah pemukiman yang tentram dengan tanah persawahan yang subur dan sumber mata air yang melimpah.
+export const defaultSejarahDesa = `Nama Desa Balerejo memiliki akar sejarah yang kuat dan sarat nilai perjuangan serta kearifan lokal di wilayah Kecamatan Kawedanan, Kabupaten Magetan. Sejak dahulu kala, kawasan ini dikenal sebagai wilayah pemukiman yang tentram dengan tanah persawahan yang subur dan sumber mata air yang melimpah.
 
-Masyarakat Desa Bogem secara turun-temurun mengandalkan sektor pertanian sawah, palawija, serta kerajinan dan perdagangan lokal. Semangat gotong royong, kebersamaan warga, dan nilai-nilai religius menjadi fondasi utama dalam kehidupan bermasyarakat.
+Masyarakat Desa Balerejo secara turun-temurun mengandalkan sektor pertanian sawah, palawija, serta kerajinan dan perdagangan lokal. Semangat gotong royong, kebersamaan warga, dan nilai-nilai religius menjadi fondasi utama dalam kehidupan bermasyarakat.
 
-Dalam era kemajuan modern dan transformasi digital saat ini, Pemerintah Desa Bogem terus berkomitmen mewujudkan desa yang mandiri, transparan, dan berdaya saing dengan memberikan pelayanan publik terbaik dan memajukan potensi ekonomi warga secara berkelanjutan.`;
+Dalam era kemajuan modern dan transformasi digital saat ini, Pemerintah Desa Balerejo terus berkomitmen mewujudkan desa yang mandiri, transparan, dan berdaya saing dengan memberikan pelayanan publik terbaik dan memajukan potensi ekonomi warga secara berkelanjutan.`;
 
 export const defaultProfilDesa: ProfilDesaData = {
   id: "main",
-  visi: "Mewujudkan Desa Bogem yang Mandiri, Sejahtera, Berdaya Saing, dan Berbudaya melalui Tata Kelola Pemerintahan yang Transparan dan Pemanfaatan Teknologi Digital.",
+  visi: "Mewujudkan Desa Balerejo yang Mandiri, Sejahtera, Berdaya Saing, dan Berbudaya melalui Tata Kelola Pemerintahan yang Transparan dan Pemanfaatan Teknologi Digital.",
   misi: [
     "Meningkatkan kualitas pelayanan administrasi dan informasi masyarakat berbasis digital.",
     "Mendorong pertumbuhan ekonomi warga lewat dukungan UMKM dan pemasaran produk lokal.",
     "Meningkatkan infrastruktur sarana publik dan kelestarian lingkungan hidup desa.",
     "Mempererat kerukunan gotong royong dan melestarikan kearifan budaya lokal.",
   ],
-  nama_kades: "Kepala Desa Bogem",
+  nama_kades: "Kepala Desa Balerejo",
   foto_kades: "",
   sambutan_kades:
-    "Selamat datang di Website Resmi Desa Bogem, Kecamatan Kawedanan, Kabupaten Magetan. Portal digital ini hadir sebagai wujud komitmen kami dalam keterbukaan informasi publik, kemudahan layanan administrasi, dan etalase promosi potensi ekonomi warga desa secara luas dan modern.",
+    "Selamat datang di Website Resmi Desa Balerejo, Kecamatan Kawedanan, Kabupaten Magetan. Portal digital ini hadir sebagai wujud komitmen kami dalam keterbukaan informasi publik, kemudahan layanan administrasi, dan etalase promosi potensi ekonomi warga desa secara luas dan modern.",
   bagan_desa_image: "",
   bagan_bpd_image: "",
   sejarah: defaultSejarahDesa,
@@ -36,9 +36,9 @@ export const defaultProfilDesa: ProfilDesaData = {
   batas_wilayah: defaultBatasWilayah,
   jam_pelayanan: "Senin - Jumat: 08.00 - 15.00 WIB",
   jam_pelayanan_note: "*Sabtu & Minggu: Libur / Pelayanan Darurat",
-  alamat_kantor: "Jl. Bakti Mulya No. 241, Desa Bogem, Kec. Kawedanan, Kab. Magetan",
+  alamat_kantor: "Jl. Raya Balerejo, Desa Balerejo, Kec. Kawedanan, Kab. Magetan",
   telepon_kantor: "+62 812-3456-7890",
-  email_kantor: "info@desabogem.id",
+  email_kantor: "info@desabalerejo.id",
   updated_at: new Date().toISOString(),
 };
 

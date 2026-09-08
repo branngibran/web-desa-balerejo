@@ -62,7 +62,7 @@ export default function BeritaPage() {
             </h1>
 
             <p className="text-emerald-100/85 text-xs sm:text-sm lg:text-base leading-relaxed break-words">
-              Publikasi resmi pengumuman pemerintah desa, laporan pembangunan, agenda posyandu, dan dokumentasi kegiatan masyarakat Desa Bogem.
+              Publikasi resmi pengumuman pemerintah desa, laporan pembangunan, agenda posyandu, dan dokumentasi kegiatan masyarakat Desa Balerejo.
             </p>
           </div>
         </div>
