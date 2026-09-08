@@ -91,17 +91,17 @@ SET search_path = public
 AS $$
 BEGIN
   -- Saat user baru terdaftar (INSERT):
-  -- Jika bukan Admin asli yang menjalankan, paksa role selalu 'warga'
+  -- Jika query berasal dari client web (auth.uid() ada) dan bukan Admin asli, paksa role selalu 'warga'
   IF TG_OP = 'INSERT' THEN
-    IF NOT public.is_admin() THEN
+    IF auth.uid() IS NOT NULL AND NOT public.is_admin() THEN
       NEW.role := 'warga';
     END IF;
   END IF;
 
   -- Saat profil diperbarui (UPDATE):
-  -- Non-admin DILARANG KERAS mengubah isi kolom role!
+  -- Client web non-admin DILARANG KERAS mengubah isi kolom role (Privilege Escalation)
   IF TG_OP = 'UPDATE' THEN
-    IF NOT public.is_admin() AND NEW.role IS DISTINCT FROM OLD.role THEN
+    IF auth.uid() IS NOT NULL AND NOT public.is_admin() AND NEW.role IS DISTINCT FROM OLD.role THEN
       RAISE EXCEPTION 'Akses Ditolak: Anda tidak memiliki izin untuk memodifikasi hak akses (role).';
     END IF;
   END IF;
