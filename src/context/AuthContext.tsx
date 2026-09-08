@@ -261,7 +261,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
 
       const cleanEmail = data.email.trim().toLowerCase();
-      const origin = typeof window !== "undefined" ? window.location.origin : "";
+      const origin =
+        typeof window !== "undefined" &&
+        (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
+          ? window.location.origin
+          : (process.env.NEXT_PUBLIC_SITE_URL || "https://web-desa-balerejo.vercel.app");
       const emailRedirectTo = `${origin}/auth/callback?redirect=/lengkapi-profil`;
 
       const userMetadata: Record<string, any> = {
@@ -357,7 +361,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     try {
       const cleanEmail = email.trim().toLowerCase();
-      const origin = typeof window !== "undefined" ? window.location.origin : "";
+      const origin =
+        typeof window !== "undefined" &&
+        (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
+          ? window.location.origin
+          : (process.env.NEXT_PUBLIC_SITE_URL || "https://web-desa-balerejo.vercel.app");
       const emailRedirectTo = `${origin}/auth/callback?redirect=/lengkapi-profil`;
 
       const { error } = await supabase.auth.resend({
@@ -487,7 +495,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
 
     try {
-      const origin = typeof window !== "undefined" ? window.location.origin : "";
+      const origin =
+        typeof window !== "undefined" &&
+        (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
+          ? window.location.origin
+          : (process.env.NEXT_PUBLIC_SITE_URL || "https://web-desa-balerejo.vercel.app");
       const redirectTo = `${origin}/auth/callback${redirectPath ? `?redirect=${encodeURIComponent(redirectPath)}` : ""}`;
 
       const { data, error } = await supabase.auth.signInWithOAuth({

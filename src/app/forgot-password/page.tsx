@@ -61,7 +61,11 @@ function ForgotPasswordForm() {
         return;
       }
 
-      const origin = typeof window !== "undefined" ? window.location.origin : "";
+      const origin =
+        typeof window !== "undefined" &&
+        (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
+          ? window.location.origin
+          : (process.env.NEXT_PUBLIC_SITE_URL || "https://web-desa-balerejo.vercel.app");
       const redirectTo = `${origin}/reset-password`;
 
       const { error: resetErr } = await supabase.auth.resetPasswordForEmail(targetEmail, {
