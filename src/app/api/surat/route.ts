@@ -8,6 +8,8 @@ import {
 } from "@/services/suratService";
 import { verifyAdminSession } from "@/lib/auth/serverAuth";
 
+export const dynamic = "force-dynamic";
+
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);

@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { fetchInfografisData, updateInfografisData } from "@/services/infografisService";
 import { verifyAdminSession } from "@/lib/auth/serverAuth";
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
     const data = await fetchInfografisData();

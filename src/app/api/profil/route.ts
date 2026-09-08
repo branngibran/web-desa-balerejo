@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { fetchProfilDesa, updateProfilDesa } from "@/services/profilService";
 import { verifyAdminSession } from "@/lib/auth/serverAuth";
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
     const data = await fetchProfilDesa();

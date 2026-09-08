@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { APP_CONFIG } from "@/utils/constants";
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   return NextResponse.json({
     status: "online",

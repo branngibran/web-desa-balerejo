@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { fetchPerangkatList, createPerangkat, updatePerangkat, deletePerangkat } from "@/services/perangkatService";
 import { verifyAdminSession } from "@/lib/auth/serverAuth";
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
     const list = await fetchPerangkatList();

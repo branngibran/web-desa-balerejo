@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { fetchUMKMList, createUMKM, updateUMKM, deleteUMKM } from "@/services/umkmService";
 import { verifyAdminSession } from "@/lib/auth/serverAuth";
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
     const list = await fetchUMKMList();

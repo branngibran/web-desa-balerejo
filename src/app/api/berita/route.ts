@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { fetchBeritaList, createBerita, updateBerita, deleteBerita } from "@/services/beritaService";
 import { verifyAdminSession } from "@/lib/auth/serverAuth";
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
     const list = await fetchBeritaList();
